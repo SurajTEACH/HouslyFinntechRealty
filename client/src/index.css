@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  
+  --color-primary-blue: #0076d8;
+  --color-primary-dark: #004d8c;
+  --color-accent-green: #00b451;
+  --color-accent-gold: #ffb700;
+  --color-accent-cyan: #00d2ff;
+  --color-accent-purple: #8c52ff;
+  
+  --color-background-light: #f8fafc;
+}
+
+@layer base {
+  body {
+    @apply antialiased text-gray-900 bg-white;
+  }
+}
+
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-slate-900;
+}
+
+.container-custom {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-[#ffd801] via-white to-[#0076d8] bg-clip-text text-transparent;
+}
+
+.section-title {
+  @apply text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight;
+}
+
+.section-subtitle {
+  @apply text-sm uppercase tracking-[0.25em] font-semibold text-[#0076d8];
+}
+
+.card-glass {
+  @apply bg-white/10 backdrop-blur-xl border border-white/20;
+}
+
+.shadow-brand {
+  box-shadow: 0 20px 60px rgba(0, 118, 216, 0.18);
+}
