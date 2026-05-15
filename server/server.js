@@ -21,7 +21,7 @@ const app = express();
 const allowedOrigins = [
   process.env.CLIENT_URL,           // Vercel URL e.g. https://hously.vercel.app
   "http://localhost:5173",           // Local development
-  "http://localhost:4173",           // Vite preview
+  "https://hously-finntech-realty-iota.vercel.app/",           // Vite preview
 ].filter(Boolean);
 
 app.use(cors({
